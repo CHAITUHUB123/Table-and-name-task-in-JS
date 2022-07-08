@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>NAME USING JAVASCRIPT</title>
+   </head>
+   <body>
+    <form>
+        <label>First Name :</label>
+        <input type="text" name="FirstName" id="FirstName" oninput="fullnameDisplay()"><br><br>
+        <label>Middle Name :</label>
+        <input type="text" name="MiddleName" id="MiddleName" oninput="fullnameDisplay()"><br><br>
+        <label>Last Name :</label>
+        <input type="text" name="LastName" id="LastName" oninput="fullnameDisplay()"><br><br>
+        <label>Full Name :</label>
+        <input type="text" name="FullName" id="FullName">
+    </form>
+   </body>
+  <script>
+   function  fullnameDisplay() {
+        document.getElementById("FullName").value=document.getElementById("FirstName").value+ " "+ document.getElementById("MiddleName").value+ " " + document.getElementById("LastName").value
+    }
+  </script>
+</html>
