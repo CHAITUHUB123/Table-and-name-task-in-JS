@@ -4,20 +4,14 @@
         <title>NAME USING JAVASCRIPT</title>
    </head>
    <body>
-    <form>
-        <label>First Name :</label>
-        <input type="text" name="FirstName" id="FirstName" oninput="fullnameDisplay()"><br><br>
-        <label>Middle Name :</label>
-        <input type="text" name="MiddleName" id="MiddleName" oninput="fullnameDisplay()"><br><br>
-        <label>Last Name :</label>
-        <input type="text" name="LastName" id="LastName" oninput="fullnameDisplay()"><br><br>
-        <label>Full Name :</label>
-        <input type="text" name="FullName" id="FullName">
-    </form>
+        <span>First Name : <input type="text"  id="FName" oninput="fullname()">
+        Middle Name : <input type="text"  id="MName" oninput="fullname()">
+            Last Name : <input type="text"  id="LName" oninput="fullname()"></span><br><br>
+        Full Name : <input type="text"  id="FullName">
    </body>
   <script>
-   function  fullnameDisplay() {
-        document.getElementById("FullName").value=document.getElementById("FirstName").value+ " "+ document.getElementById("MiddleName").value+ " " + document.getElementById("LastName").value
+   function  fullname() {
+        document.getElementById("FullName").value=document.getElementById("FName").value+ " "+ document.getElementById("MName").value+ " " + document.getElementById("LName").value
     }
   </script>
 </html>
